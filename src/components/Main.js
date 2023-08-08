@@ -4,11 +4,9 @@ import Booking from "./Booking";
 import ConfirmedBooking from "./ConfirmedBooking";
 import Header from "./Header";
 
-
 const Main = () => {
 
     // const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"])
-
     //Chrome was blocking running the script on the index page so I added it here. "https://chromestatus.com/feature/5629709824032768"
     const seededRandom = function (seed) {
         var m = 2**35 - 31;
@@ -18,7 +16,6 @@ const Main = () => {
             return (s = s * a % m) / m;
         };
     }
-
     const fetchAPI = function(date) {
         let result = [];
         let random = seededRandom(date.getDate());
@@ -58,8 +55,6 @@ const Main = () => {
                 <Route path="/confirmed" element={<ConfirmedBooking/> } />
             </Routes>
         </main>
-
-
     )
 }
 
