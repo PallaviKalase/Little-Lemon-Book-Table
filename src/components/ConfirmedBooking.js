@@ -8,7 +8,6 @@ const ConfirmedBooking = () => {
         </h1>
             </section>
         </header>
-
     )
 }
 
