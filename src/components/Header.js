@@ -2,7 +2,6 @@ import React from "react";
 import food1 from "../images/food1.avif"
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
     return(
         <header>
